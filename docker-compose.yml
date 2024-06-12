@@ -12,9 +12,9 @@ services:
       - SONAR_WEB_HOST=0.0.0.0
       - SONAR_WEB_PORT=9000
     volumes:
-      - sonarqube_data:/opt/sonarqube/data
-      - sonarqube_extensions:/opt/sonarqube/extensions
-      - sonarqube_logs:/opt/sonarqube/logs
+      - dev_sonarqube_data:/opt/sonarqube/data
+      - dev_sonarqube_extensions:/opt/sonarqube/extensions
+      - dev_sonarqube_logs:/opt/sonarqube/logs
     # ports:
     #   - "9000:9000"
 
