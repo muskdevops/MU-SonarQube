@@ -12,17 +12,8 @@ services:
       - SONAR_WEB_HOST=0.0.0.0
       - SONAR_WEB_PORT=9000
     volumes:
-      - dev_sonarqube_data:/opt/sonarqube/data
-      - dev_sonarqube_extensions:/opt/sonarqube/extensions
-      - dev_sonarqube_logs:/opt/sonarqube/logs
+      - final_dev_sonarqube_data:/opt/sonarqube/data
+      - final_dev_sonarqube_extensions:/opt/sonarqube/extensions
+      - final_dev_sonarqube_logs:/opt/sonarqube/logs
     # ports:
     #   - "9000:9000"
-
-#   db:
-#     image: postgres:12
-#     environment:
-#       POSTGRES_USER: sonar
-#       POSTGRES_PASSWORD: sonar
-#     volumes:
-#       - ./datadrive/postgresql:/var/lib/postgresql
-#       - ./datadrive/postgresql/data:/var/lib/postgresql/data
